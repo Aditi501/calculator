@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="display-div">
+            <input type="text" id="display-screen" disabled>    
+        </div>
+        <div class="keys">
+            <div class="key-container">
+            <input type="button" value="7" onclick="display('7')">
+            <input type="button" value="8" onclick="display('8')">
+            <input type="button" value="9" onclick="display('9')">
+            <input class="delete" type="button"value="DEL" onclick="del()">
+
+            <input type="button" value="4" onclick="display('4')">
+            <input type="button" value="5" onclick="display('5')">
+            <input type="button" value="6" onclick="display('6')">
+            <input type="button" value="+" onclick="display('+')">
+
+            <input type="button" value="1" onclick="display('1')">
+            <input type="button" value="2" onclick="display('2')">
+            <input type="button" value="3" onclick="display('3')">
+            <input type="button" value="-" onclick="display('-')">
+
+            <input type="button" value="0" onclick="display('0')">
+            <input type="button" value="." onclick="display('.')">
+            <input type="button" value="/" onclick="display('/')">
+            <input type="button" value="x" onclick="display('*')">
+        </div>
+        <div class="btns">
+            <input type="button" class="reset" value="RESET" onclick="clr()">
+            <input type="button" class="result" value="=" onclick="solve()">
+        </div>
+        </div>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
